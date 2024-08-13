@@ -179,6 +179,29 @@ body {
     background-image: url('image/right.png');
 }
 
+.notices-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #595757;
+    margin: 0;
+}
+
+.add-notice-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.add-notice-btn:hover {
+    opacity: 0.8;
+}
+
 /**
 포토갤러리
  */
@@ -331,17 +354,6 @@ body {
 .notice-date {
     font-size: 14px;
     color: #777;
-}
-
-.notice-arrow {
-    font-size: 20px;
-    color: #999;
-}
-
-/* Font Awesome을 사용하지 않는 경우 화살표 대체 */
-.notice-arrow::after {
-    content: '→';
-    font-size: 20px;
 }
 
 .footer-content {
