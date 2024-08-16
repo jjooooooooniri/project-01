@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bca5c99a-3103-420b-8be6-9846c8415eb1" name="준일테스트" url="http://jjooniri.iwinv.net">
+        <fileTransfer accessType="SFTP" host="jjooniri.iwinv.net" port="22" sshConfigId="89e12d69-ce0c-4f40-8ff5-5ae6c8a2a0e6" sshConfig="jjooniri@jjooniri.iwinv.net:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

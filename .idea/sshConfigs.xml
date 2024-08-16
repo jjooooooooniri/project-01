@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="jjooniri.iwinv.net" id="89e12d69-ce0c-4f40-8ff5-5ae6c8a2a0e6" port="22" nameFormat="DESCRIPTIVE" username="jjooniri" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
