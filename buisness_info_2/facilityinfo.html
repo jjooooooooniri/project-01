@@ -120,45 +120,53 @@
         <div class="sub-page-title">
             <img src="../image/facility_sub.png" alt="시설안내 타이틀" class="img-fluid">
         </div>
-        <div class="sub-page-main text-center" style="margin-bottom: 100px;">
+        <div class="sub-page-main text-center" style="margin-bottom: 50px;">
             <img src="../image/divison_img.png" alt="" class="img-fluid">
         </div>
         <div class="sub-page-main" style="margin-bottom: 100px;">
             <img src="../image/facility_title.png" alt="시설안내" class="img-fluid" style="width: 650px; margin-bottom: 60px;">
             <div class="image-grid facility">
                 <div class="grid-item">
-                    <img src="../image/facility_img1.png">
+                    <a href="#agape-hall" class="facility-link">
+                        <img src="../image/facility_img1.png">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="../image/facility_img2.png">
+                    <a href="#grace-hall" class="facility-link">
+                        <img src="../image/facility_img2.png">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="../image/facility_img3.png">
+                    <a href="#meeting-room" class="facility-link">
+                        <img src="../image/facility_img3.png">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="../image/facility_img4.png">
+                    <a href="#wedding-ceremony" class="facility-link">
+                        <img src="../image/facility_img4.png">
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="sub-page-main">
+        <div id="agape-hall" class="sub-page-main">
             <img src="../image/facility_img5.png" alt="아카페홀 타이틀" class="img-fluid" style="width: 110px;">
         </div>
         <div class="sub-page-main text-center" style="margin-bottom: 100px;">
             <img src="../image/facility_img6.png" alt="아카페홀" class="img-fluid" style="width: 900px;">
         </div>
-        <div class="sub-page-main">
+        <div id="grace-hall" class="sub-page-main">
             <img src="../image/facility_img7.png" alt="그레이스홀 타이틀" class="img-fluid" style="width: 130px;">
         </div>
         <div class="sub-page-main text-center" style="margin-bottom: 100px;">
             <img src="../image/facility_img8.png" alt="그레이스홀" class="img-fluid" style="width: 900px;">
         </div>
-        <div class="sub-page-main">
+        <div id="meeting-room" class="sub-page-main">
             <img src="../image/facility_img9.png" alt="회의실 타이틀" class="img-fluid" style="width: 100px;">
         </div>
         <div class="sub-page-main text-center" style="margin-bottom: 100px;">
             <img src="../image/facility_img10.png" alt="회의실" class="img-fluid" style="width: 900px;">
         </div>
-        <div class="sub-page-main">
+        <div id="wedding-ceremony" class="sub-page-main">
             <img src="../image/facility_img11.png" alt="결혼예식 타이틀" class="img-fluid" style="width: 200px;">
         </div>
         <div class="sub-page-main" style="margin-bottom: 100px;">
@@ -166,6 +174,25 @@
         </div>
     </div>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const facilityLinks = document.querySelectorAll('.facility-link');
+
+        facilityLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
 <footer class="custom-bg text-white py-4">
     <div class="container">
         <div class="footer-content">
