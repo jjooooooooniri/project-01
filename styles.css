@@ -56,14 +56,22 @@ body {
 
 .navbar-nav .nav-item {
     position: relative;
+    height: 70px;
 }
+
+.navbar-nav li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 
 .navbar-nav .nav-item .dropdown-menu {
     display: none;
     position: absolute;
     top: 55px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.9);
     border: none;
     border-radius: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,7 +89,7 @@ body {
 .dropdown-item:hover,
 .dropdown-item:focus {
     color: #000;
-    background-color: transparent; 
+    background-color: transparent;
     text-decoration: none;
 }
 
@@ -94,7 +102,8 @@ body {
 }
 
 .navbar.navbar-expand-lg.custom-bg {
-    height: 76px;
+    height: 70px;
+    padding: 0;
 }
 
 .btn-circle {
